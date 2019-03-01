@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Leah's Art History Portfolio</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+		<h1>a title</h1>
+	</head>
+
+	<body>
+		<!-- info box -->
+		<div class="info">
+			<p style="margin-right:10%;">Welcome! This is a website where I talk about art I've studied!</p>
+		</div>
+
+		<!-- put images in gallery -->
+		<div class="row">
+			<div class="col">
+				<div class="container">
+					<img src="static/magritte.jpg" style="width:37%"/>
+					<p1 class="title">René Magritte</p1>
+					<p class="title">Time Transfixed</p>
+					<div class="overlay"></div>
+					<div class="button"><a href="#">LEARN MORE</a></div>
+				</div>
+
+				<div class="container">
+					<img src="static/kahlo.jpg" style="width:37%"/>
+					<p1 class="title">Frida Kahlo</p1>
+					<p class="title">The Love Embrace</p>
+					<div class="overlay"></div>
+					<div class="button"><a href="#">LEARN MORE</a></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- navigate slideshow -->
+		<script>
+			/*
+			var curr_slide = 1;
+			play_slideshow(curr_slide);
+
+			function next_slide(n) {
+				play_slideshow(curr_slide += n);
+			}
+
+			function display_slide(n) {
+				play_slideshow(curr_slide = n)
+			}
+
+			function play_slideshow(n) {
+				var i;
+				var gallery = document.getElementByClassName("collection")
+				var size = gallery.length
+
+				// loop slideshow
+				if (n > size) {curr_slide = 1}
+				if (n < 1) {curr_slide = size}
+
+				// default to CSS styling for each slide
+				for (i = 0; i < size; i++) {gallery[i].style.display="none"}
+
+				gallery[curr_slide-1].style.display = "block"
+			}*/
+		</script>
+
+	</body>
+
+</html>
