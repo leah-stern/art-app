@@ -15,53 +15,74 @@
 
 	<body>
 		<!-- put images in gallery -->
-		<div class="flex-container">
-			<div class="flex-item">
-				<img id="img" src="static/magritte.jpg" style="height:60%"/>
-
-				<div id="modal_img" class="modal">
-					<span class="close"></span>
-					<img class="modal-content" id="img1">
-				</div>
+		<div class="flex_container">
+			<div class="flex_item">
+				<img id="img1" src="static/magritte.jpg" style="height:60%"/>
 
 				<div class="overlay">
 					<p1 class="title">René Magritte</p1>
 					<p class="title">Time Transfixed</p>
-					<div id="butt" class="button"><a href="#">LEARN MORE</a></div>
+					<div id="button1" class="button"><a href="#">LEARN MORE</a></div>
+				</div>
+
+				<div id="modal_img1" class="modal">
+					<img class="modal_content" id="big_img1">
+					<div class="info_button">hey</div>
+					<span id="close1" class="close">x</span>
 				</div>
 			</div>
 
-			<div class="flex-item">
-				<img id ="img" src="static/kahlo.jpg" style="height:60%"/>
-
-				<div id="modal_img" class="modal">
-					<span class="close"></span>
-					<img class="modal-content" id="img1">
-				</div>
+			<div class="flex_item">
+				<img id ="img2" src="static/kahlo.jpg" style="height:60%"/>
 
 				<div class="overlay">
 					<p1 class="title">Frida Kahlo</p1>
 					<p class="title">The Love Embrace</p>
-					<div id="butt" class="button"><a href="#">LEARN MORE</a></div>
+					<div id="button2" class="button"><a href="#">LEARN MORE</a></div>
+				</div>
+
+				<div id="modal_img2" class="modal">
+					<img class="modal_content" id="big_img2">
+					<span id="close2" class="close">x</span>
 				</div>
 			</div>
 		</div>
 
 		<script>
-			var modal = document.getElementById('modal_img')
-			var button = document.getElementById('butt')
-			var img = document.getElementById('img')
-			var modalImg = document.getElementById('img1')
+			// Image 1
+			var modal1 = document.getElementById('modal_img1')
+			var button1 = document.getElementById('button1')
+			var img1 = document.getElementById('img1')
+			var modal_img1 = document.getElementById('big_img1')
 
-			button.onclick = function() {
-				modal.style.display = "block";
-				modalImg.src = img.src;
+			// Image 2
+			var modal2 = document.getElementById('modal_img2')
+			var button2 = document.getElementById('button2')
+			var img2 = document.getElementById('img2')
+			var modal_img2 = document.getElementById('big_img2')
+
+			// Open modal image on button click
+			button1.onclick = function() {
+				modal1.style.display = "block";
+				modal_img1.src = img1.src;
 			}
 
-			var span = document.getElementByClassName("close")[0];
+			// Open modal image on button click
+			button2.onclick = function() {
+				modal2.style.display = "block";
+				modal_img2.src = img2.src;
+			}
 
+			// Close button for modal image
+			var span = document.getElementById("close1")
 			span.onclick = function() {
-				modal.style.display = "none";
+				modal1.style.display = "none";
+			}
+
+			// Close button for modal image
+			var span = document.getElementById("close2")
+			span.onclick = function() {
+				modal2.style.display = "none";
 			}
 		</script>
 
