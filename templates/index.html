@@ -5,92 +5,113 @@
 	<head>
 		<title>Leah's Art History Portfolio</title>
 		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-		<h1>art history portfolio<br>by Leah Stern</h1>
+<!-- 		<h1>Art History Portfolio<br>by Leah Stern</h1>
 
-		<!-- about box -->
 		<div class="about">
 			<p>
-			Welcome! This is a website for me to display my art historical knowledge and for you to learn about awesome works of art!
+		    Hi! I've written so many essays on works of art that I thought I'd make a web app out of them. Click on an image to read some of my analyses!
 			</p>
-		</div>
+		</div> -->
 	</head>
 
 	<body>
-		<div class="flex_container">
-			<div class="flex_item">
-				<img id="img1" src="static/magritte.jpg" style="height:60%"/>
-
-				<div class="overlay">
-					<p1 class="title">René Magritte</p1>
-					<p class="title">Time Transfixed</p>
-					<div id="button1" class="button"><a href="#">LEARN MORE</a></div>
-				</div>
-
-				<div id="modal_img1" class="modal">
-					<div class="modal_title">
-						René Magritte<br>
-						La Durée poignardée (Time Transfixed)<br>
-						oil on canvas<br>
-						1938
-					</div>
-					<div class="info_button" style="right:55%; top:25%"><a href="#"></a>
-						<span class="info" style="right:110%">
-						Magritte's surrealism brings the bizarre to a visually convincing world. Note the rationality of the reflections in the mirror, the consistent light source, and the receding lines creating a realistic space.
-						</span>
-					</div>
-					<div class="info_button" style="right:45%; top:45%"><a href="#"></a>
-						<span class="info" style="left:110%">
-						Like most of Magritte's work, this piece traffics in the idea of resemblance, in which two images are condensed as one. Here, the fireplace image and the train image are unified in a double substitution. While the fireplace replaces the train's tunnel, the billowing smoke from the train replaces the smoke from the fireplace.
-						</span>
-					</div>
-					<img class="modal_content" id="big_img1">
-					<span id="close1" class="close">x</span>
+		<div class="row">
+			<div class="column" style="flex:30%">
+				<h1>Art<br>History<br>Portfolio</h1>
+				<div class="about">
+					<p>
+					Hi! I'm 
+						<a href="https://www.linkedin.com/in/leahstern13/">
+						Leah.</a>
+					</p>
+					<p1>
+				    I've written so many essays on works of art that I thought I'd make a web app out of them. Click on an image to read some of my analyses!
+					</p1>
 				</div>
 			</div>
 
-			<div class="flex_item">
-				<img id ="img2" src="static/kahlo.jpg" style="height:60%"/>
+			<div class="column" style="flex:70%">
+				<div class="flex_container">
+					<div class="flex_item">
+						<img id="img1" src="static/magritte.jpg" style="height:60%"/>
 
-				<div class="overlay">
-					<p1 class="title">Frida Kahlo</p1>
-					<p class="title">The Love Embrace</p>
-					<div id="button2" class="button"><a href="#">LEARN MORE</a></div>
-				</div>
+						<div class="overlay">
+							<p1 class="title" style="left:9%">René Magritte</p1>
+							<p class="title" style="left:7%">Time Transfixed</p>
+							<div id="button1" class="button" style="right:25%">
+								<a href="#">LEARN MORE</a>
+							</div>
+						</div>
 
-				<div id="modal_img2" class="modal">
-					<div class="modal_title" style="right: 10%; top: 65%;">
-						Frida Kahlo<br>
-						The Love Embrace of the Universe, <br>the Earth (Mexico), Myself, Diego, <br>and Señor Xolotl<br>
-						oil on canvas<br>
-						1949
+						<div id="modal_img1" class="modal">
+							<div class="modal_title">
+								René Magritte<br>
+								La Durée poignardée (Time Transfixed)<br>
+								oil on canvas<br>
+								1938
+							</div>
+							<div class="info_button" style="right:55%; top:25%"><a href="#"></a>
+								<span class="info" style="right:110%">
+								Magritte's surrealism brings the bizarre to a visually convincing world. Note the rationality of the reflections in the mirror, the consistent light source, and the receding lines creating a realistic space.
+								</span>
+							</div>
+							<div class="info_button" style="right:45%; top:45%"><a href="#"></a>
+								<span class="info" style="left:110%">
+								Like most of Magritte's work, this piece traffics in the idea of resemblance, in which two images are condensed as one. Here, the fireplace image and the train image are unified in a double substitution. While the fireplace replaces the train's tunnel, the billowing smoke from the train replaces the smoke from the fireplace.
+								</span>
+							</div>
+							<img class="modal_content" id="big_img1">
+							<span id="close1" class="close">x</span>
+						</div>
 					</div>
-					<div class="info_button" style="right:35%; top:15%"><a href="#"></a>
-						<span class="info" style="left:110%">
-						Above all else, this piece is about duality. Kahlo's cosmic skies immediately bring to mind the image of yin and yang, defined by the balance of opposing forces. Within the darkness there is light, and within the light there is darkness.
-						</span>
+
+					<div class="flex_item">
+						<img id ="img2" src="static/kahlo.jpg" style="height:60%"/>
+
+						<div class="overlay">
+							<p1 class="title" style="left:22%">Frida Kahlo</p1>
+							<p class="title" style="left:15%">The Love Embrace</p>
+							<div id="button2" class="button" style="right:15%">
+								<a href="#">LEARN MORE</a>
+							</div>
+						</div>
+
+						<div id="modal_img2" class="modal">
+							<div class="modal_title" style="right: 10%; top: 65%;">
+								Frida Kahlo<br>
+								The Love Embrace of the Universe, <br>the Earth (Mexico), Myself, Diego, <br>and Señor Xolotl<br>
+								oil on canvas<br>
+								1949
+							</div>
+							<div class="info_button" style="right:35%; top:15%"><a href="#"></a>
+								<span class="info" style="left:110%">
+								Above all else, this piece is about duality. Kahlo's cosmic skies immediately bring to mind the image of yin and yang, defined by the balance of opposing forces. Within the darkness there is light, and within the light there is darkness.
+								</span>
+							</div>
+							<div class="info_button" style="right:45%; top:30%"><a href="#"></a>
+								<span class="info" style="left:110%">
+								Kahlo's personfication of the Earth takes the form of a woman, from whose breast drips milk in reference to her life-giving abiliites. While her fertility brings life, the crack in her chest reminds us of the cyclic nature of life and death. Kahlo's self-portrait in this piece mirrors that same crack, showing a consciousness that she, too, continues this cycle.
+								</span>
+							</div>
+							<div class="info_button" style="right:55%; top:70%"><a href="#"></a>
+								<span class="info" style="left:110%">
+								The Xolotl dog, or Mexican hairless dog, is a breed that has accompanied people in the region of Mexico since the pre-Columbian era. In Aztec mythology, Xolotl is the god of the underworld and brings humans into the afterlife. The Xolotl's presence in this work is certainly a reminder of the motif of cyclic life and death.
+								</span>
+							</div>
+							<div class="info_button" style="right:50%; top:50%"><a href="#"></a>
+								<span class="info" style="left:110%">
+								Working within the work's motif of duality, Kahlo's representation of her husband Diego Rivera shows her dissatisfaction with the gender binary enforced by a patriarchal society. Kahlo sheds a tear and bleeds over an infantile Rivera, who sits contently in her lap, unaware of the oppressive nature of this binary. Nevertheless, Kahlo still adorns Rivera with an all-knowing third eye, reinforcing the idea of duality in the context of her feelings toward Rivera.
+								</span>
+							</div>
+							<div class="info_button" style="right:65%; top:40%"><a href="#"></a>
+								<span class="info" style="right:110%">
+								The plants flanking each side of this hierarchical portrait recall the duality of life and death. Just as the Earth mother must succumb to this cycle, so must the natural world. The left half of the painting is much darker, and the plants here are far less lively and colorful than those on the right.
+								</span>
+							</div>
+							<img class="modal_content" id="big_img2">
+							<span id="close2" class="close">x</span>
+						</div>
 					</div>
-					<div class="info_button" style="right:45%; top:30%"><a href="#"></a>
-						<span class="info" style="left:110%">
-						Kahlo's personfication of the Earth takes the form of a woman, from whose breast drips milk in reference to her life-giving abiliites. While her fertility brings life, the crack in her chest reminds us of the cyclic nature of life and death. Kahlo's self-portrait in this piece mirrors that same crack, showing a consciousness that she, too, continues this cycle.
-						</span>
-					</div>
-					<div class="info_button" style="right:55%; top:70%"><a href="#"></a>
-						<span class="info" style="left:110%">
-						The Xolotl dog, or Mexican hairless dog, is a breed that has accompanied people in the region of Mexico since the pre-Columbian era. In Aztec mythology, Xolotl is the god of the underworld and brings humans into the afterlife. The Xolotl's presence in this work is certainly a reminder of the motif of cyclic life and death.
-						</span>
-					</div>
-					<div class="info_button" style="right:50%; top:50%"><a href="#"></a>
-						<span class="info" style="left:110%">
-						Working within the work's motif of duality, Kahlo's representation of her husband Diego Rivera shows her dissatisfaction with the gender binary enforced by a patriarchal society. Kahlo sheds a tear and bleeds over an infantile Rivera, who sits contently in her lap, unaware of the oppressive nature of this binary. Nevertheless, Kahlo still adorns Rivera with an all-knowing third eye, reinforcing the idea of duality in the context of her feelings toward Rivera.
-						</span>
-					</div>
-					<div class="info_button" style="right:65%; top:40%"><a href="#"></a>
-						<span class="info" style="right:110%">
-						The plants flanking each side of this hierarchical portrait recall the duality of life and death. Just as the Earth mother must succumb to this cycle, so must the natural world. The left half of the painting is much darker, and the plants here are far less lively and colorful than those on the right.
-						</span>
-					</div>
-					<img class="modal_content" id="big_img2">
-					<span id="close2" class="close">x</span>
 				</div>
 			</div>
 		</div>
